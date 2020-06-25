@@ -2,7 +2,7 @@ package main.java.com.hw3;
 
 import main.java.com.hw3.car.Car;
 import main.java.com.hw3.circle.Circle;
-import main.java.com.hw3.count.FlowersCount;
+import main.java.com.hw3.count.FlowerCount;
 
 public class Main {
     public static final int RADIUS = 13;
@@ -12,10 +12,10 @@ public class Main {
         Circle circle = new Circle(RADIUS);
         System.out.println(circle);
 
-        new FlowersCount();
-        new FlowersCount();
-        new FlowersCount();
-        System.out.println("Amout of objects: " + FlowersCount.getCount());
+        new FlowerCount();
+        new FlowerCount();
+        new FlowerCount();
+        System.out.println("Amout of objects: " + FlowerCount.getCount());
 
         Car auto = new Car();
         auto.name = "Fiat ";
