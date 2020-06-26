@@ -20,7 +20,8 @@ public class Main {
         auto.setColor("Pink");
         auto.setName("Fiat");
         auto.startMotor();
-        auto.keepSpeed(120);
+        auto.setSpeed(100);
+        auto.keepSpeed();
         auto.stopMotor();
     }
 }

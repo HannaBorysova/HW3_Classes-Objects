@@ -3,7 +3,7 @@ package main.java.com.hw3.car;
 public class Car {
     private String name;
     private String color;
-    public int speed;
+    private int speed;
 
     public String getName(String Fiat) {
         return name;
@@ -21,11 +21,23 @@ public class Car {
         this.color = color;
     }
 
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        if (speed > 120) {
+            this.speed = 120;
+        } else {
+            this.speed = speed;
+        }
+    }
+
     public void startMotor() {
         System.out.println(color + " " + name + " " + "started to drive");
     }
 
-    public void keepSpeed(int speed) {
+    public void keepSpeed() {
         System.out.println(color + " " + name + " " + "ride with speed" + " " + speed + " " + "km/h ");
     }
 
