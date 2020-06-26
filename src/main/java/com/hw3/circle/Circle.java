@@ -13,7 +13,6 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "The Area of the Circle{radius=" + radius +
-                "}: " + calculateArea();
+        return "The Area of the Circle{radius=" + radius + "}: " + calculateArea();
     }
 }

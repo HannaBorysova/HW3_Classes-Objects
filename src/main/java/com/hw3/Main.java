@@ -6,7 +6,6 @@ import main.java.com.hw3.count.FlowerCount;
 
 public class Main {
     public static final int RADIUS = 13;
-    public static final int SPEED = 120;
 
     public static void main(String[] args) {
         Circle circle = new Circle(RADIUS);
@@ -18,10 +17,10 @@ public class Main {
         System.out.println("Amout of objects: " + FlowerCount.getCount());
 
         Car auto = new Car();
-        auto.name = "Fiat ";
-        auto.color = "Pink ";
+        auto.setColor("Pink");
+        auto.setName("Fiat");
         auto.startMotor();
-        auto.keepSpeed(SPEED);
+        auto.keepSpeed(120);
         auto.stopMotor();
     }
 }

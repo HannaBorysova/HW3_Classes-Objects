@@ -5,6 +5,7 @@ public class FlowerCount {
     public FlowerCount() {
         count++;
     }
+
     public static int getCount() {
         return count;
     }
